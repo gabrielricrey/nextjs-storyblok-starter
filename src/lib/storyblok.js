@@ -15,9 +15,12 @@ import Button from "@/components/sb/Button";
 import BtnGroup from "@/components/sb/BtnGroup";
 import Footer from "@/components/sb/Footer";
 import FooterGrid from "@/components/sb/FooterGrid";
+import BlogPostCard from "@/components/sb/BlogPostCard";
+import BlogPost from "@/components/sb/BlogPost";
 export const components = {
   // Add your components here
   page: Page,
+  blogPost: BlogPost,
   navbar: Navbar,
   logo: Logo,
   link_group: LinkGroup,
@@ -29,6 +32,7 @@ export const components = {
   hero: Hero,
   button: Button,
   btn_group: BtnGroup,
+  blogpost_card: BlogPostCard,
   footer: Footer,
   footer_grid: FooterGrid,
   doesNotExist: DoesNotExist,

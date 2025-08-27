@@ -2,7 +2,6 @@ import ServerComponent from "./ServerComponent";
 import { cn } from "@/utils/cn";
 
 export default function LinkGroup({ blok }) {
-  console.log(blok);
   return (
     <div
       className={cn("flex gap-5", {
