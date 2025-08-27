@@ -1,7 +1,6 @@
 import ServerComponent from "./ServerComponent";
 
 export default function FooterGrid({ blok }) {
-  console.log("INSIDE FOOTERGRID", blok);
   return (
     <div className="flex w-full justify-around">
       {blok.columns.map((blok) => {

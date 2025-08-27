@@ -1,5 +1,6 @@
 import { getStoryblokApi } from "@/lib/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
+import getSbVersion from "@/utils/getSbVersion";
 
 export default async function Showcase() {
   const { data } = await fetchData();
@@ -13,6 +14,6 @@ export default async function Showcase() {
 export async function fetchData() {
   const storyblokApi = getStoryblokApi();
   return await storyblokApi.get("cdn/stories/showcase", {
-    version: "draft",
+    version: getSbVersion(),
   });
 }

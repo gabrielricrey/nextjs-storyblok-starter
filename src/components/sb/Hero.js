@@ -1,6 +1,4 @@
-import { components } from "@/lib/storyblok";
 import ServerComponent from "./ServerComponent";
-import DoesNotExist from "./DoesNotExist";
 
 export default function Hero({ blok }) {
   return (
