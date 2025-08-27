@@ -1,5 +1,6 @@
 import { getStoryblokApi } from "@/lib/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
+import getSbVersion from "@/utils/getSbVersion";
 
 /**
  * Home page - renders the Storyblok story through which all components are rendered
@@ -20,8 +21,7 @@ export default async function Home() {
  */
 export async function fetchData() {
   const storyblokApi = getStoryblokApi();
-  const version = process.env.NODE_ENV !== "production" ? "draft" : "published";
   return await storyblokApi.get("cdn/stories/home", {
-    version,
+    version: getSbVersion(),
   });
 }
